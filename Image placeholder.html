@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    img{
+      max-width:200px;
+      max-height:200px;
+    }
+    .imgpage{
+      width:200px;
+      height:200px;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      border:1px solid red;
+    }
+  </style>
+</head>
+<body>
+  <div class="imgpage">
+    <img data-src="http://wx4.sinaimg.cn/mw690/005XSXmNgy1fddcz5or0rj30ku0kudi7.jpg"
+       src="http://i4.buimg.com/567571/af68ca6abbb84a4d.jpg" alt="">
+  </div>
+  <div class="imgpage">
+    <img data-src="http://wx3.sinaimg.cn/mw690/005XSXmNgy1fddcz5dugdj30u00u07fb.jpg"
+       src="http://i4.buimg.com/567571/af68ca6abbb84a4d.jpg" alt="">
+  </div>
+  <div class="imgpage">
+    <img data-src="http://wx2.sinaimg.cn/mw690/005XSXmNgy1fddcz603nrj30kc0kcn41.jpg"
+       src="http://i4.buimg.com/567571/af68ca6abbb84a4d.jpg" alt="">
+  </div>
+  <script>
+    var allImages = document.getElementsByTagName("img")
+    var i
+    for(i=0;i<allImages.length;i++){
+      let img = allImages[i]
+      
+      let url = img.getAttribute("data-src")
+      
+      let tempImage = document.createElement("img")
+      
+      tempImage.src = url
+      
+      tempImage.onload = function(){
+        img.src = url
+      }
+    }
+  </script>
+</body>
+</html>
