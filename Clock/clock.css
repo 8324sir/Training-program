@@ -23,12 +23,24 @@ body{
   position:relative;
   background:#dcdbd8;
 }
+.clock::after{
+  content:"";
+  width: 12px;
+  height: 12px;
+  background: #2a2a2b;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  margin-left: -6px;
+  margin-top: -6px;  
+}
 .clock>div{
   position:absolute;
   top:50%;
   left:50%;
   height:1px;
-  background:black;
+  background:#2a2a2b;
   width:80px;
 }
 .clock>.second-hand{
