@@ -13,7 +13,8 @@ body{
   display: flex;
   justify-content:center;
   align-items:center;
-  background:#2a2a2b
+  background:#2a2a2b;
+  box-shadow: 0px 5px 1em #7c7472; 
 }
 .clock{
   border:1px solid black;
@@ -21,13 +22,42 @@ body{
   height:200px;
   border-radius:50%;
   position:relative;
-  background:#dcdbd8;
+  background:#EEF2F3;
+  box-shadow:inset 0px 10px 1em #A7A6A0; 
+}
+.a{
+  position:absolute;
+  top:50%;
+  left:90%;
+  margin-top:-12px;
+  font-size:24px; 
+}
+.b{
+  position:absolute;
+  top:85%;
+  left:50%;
+  margin-left:-6px;
+  font-size:24px;
+}
+.c{
+  position:absolute;
+  top:50%;
+  right:90%;
+  margin-top:-12px;
+  font-size:24px;
+}
+.d{
+  position:absolute;
+  top:5%;
+  left:50%;
+  margin-left:-12px;
+  font-size:24px;
 }
 .clock::after{
   content:"";
   width: 12px;
   height: 12px;
-  background: #2a2a2b;
+  background: #FAD200;
   position: absolute;
   border-radius: 50%;
   top: 50%;
@@ -46,7 +76,7 @@ body{
 .clock>.second-hand{
   height:2px;
   width:100px;
-  background:#d5ba30;
+  background:#FAD200;
   transform-origin:0 0;
   transform:rotate(-90deg);
 }
