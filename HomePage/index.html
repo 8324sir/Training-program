@@ -1,105 +1,170 @@
- <!doctype html>
+<!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
         <![endif]-->
-    </head>
-    <body>
-        <!--[if lt IE 8]>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <!--头部-->
-        <header class="home-header">            
-            <div id="teamhome" class="home-navtop">
-                <div class="team-home wrap">
-                    <ul class="site-nav">
-                        <li class="fl nba-logo">
-                            <a href="/">nba中国官方网站</a>
-                        </li>
-                    </ul>
-                    <div class="navtop-inner">
-                        <div class="fl team-logo">
-                            <P>
-                                <span class="regular">常规赛&nbsp;&nbsp;61胜 - 21负</span>
-                                <span class="rank">西部第二名</span>
-                            </P>
-                        </div>
-                        <ul class="fr team-match">
-                            <li>
-                                <span>主教练</span>
-                                <em>格雷 波波维奇</em>
-                            </li>
-                            <li>
-                                <span>分区</span>
-                                <em>西南分区</em>
-                            </li>
-                            <li>
-                                <span>球馆</span>
-                                <em>AT&T中心球馆</em>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <nav class="home-navbar">
-                <ul class="home-nav-list">
-                    <li class="home-nav-item">
-                        <a class="home-nav-link" href="">首页</a>
-                    </li>
-                    <li class="home-nav-item">
-                        <a class="home-nav-link" href="">新闻</a>
-                    </li>
-                    <li class="home-nav-item">
-                        <a class="home-nav-link" href="">球员</a>
-                    </li>
-                    <li class="home-nav-item">
-                        <a class="home-nav-link" href="">其他</a>
+    <!--头部-->
+    <div class="home-header">
+        <div id="teamhome" class="home-navtop">
+            <div class="team-home wrap">
+                <ul class="site-nav">
+                    <li class="fl nba-logo">
+                        <a href="/">nba中国官方网站</a>
                     </li>
                 </ul>
-                <div class="home-entries">
-                    <ul>
-                        <li class="home-nav-item">
-                            <a href="" class="home-button  blue">登录</a>
+                <div class="navtop-inner">
+                    <div class="fl team-logo">
+                        <P>
+                            <span class="regular">常规赛&nbsp;&nbsp;61胜 - 21负</span>
+                            <span class="rank">西部第二名</span>
+                        </P>
+                    </div>
+                    <ul class="fr team-match">
+                        <li>
+                            <span>主教练</span>
+                            <em>格雷 波波维奇</em>
                         </li>
-                        <li class="home-nav-item">
-                            <a href="" class="home-button  blue">注册</a>
+                        <li>
+                            <span>分区</span>
+                            <em>西南分区</em>
+                        </li>
+                        <li>
+                            <span>球馆</span>
+                            <em>AT&T中心球馆</em>
                         </li>
                     </ul>
-                </div> 
-            </nav>         
-        </header>
-        <!-- 主页 -->
-        <section id="home-page">
-           
-        </section>
-        <!-- 图集 -->
-        <section >
-            <!-- 这里要做个轮播 -->
-        </section>
-        <!-- 画板 -->
-        <section>
+                </div>
+            </div>
+        </div>
+        <div class="home-navbar">
+            <ul class="home-nav-list">
+                <li class="home-nav-item">
+                    <a class="home-nav-link" href="#teamhome">首页</a>
+                </li>
+                <li class="home-nav-item">
+                    <a class="home-nav-link" href="">新闻</a>
+                </li>
+                <li class="home-nav-item">
+                    <a class="home-nav-link" href="">球员</a>
+                </li>
+                <li class="home-nav-item">
+                    <a class="home-nav-link" href="">其他</a>
+                </li>
+            </ul>
+            <div class="home-entries">
+                <ul>
+                    <li class="home-nav-item">
+                        <a href="" class="home-button  blue">登录</a>
+                    </li>
+                    <li class="home-nav-item">
+                        <a href="" class="home-button  blue">注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="wrap">
+            <!-- 主页 -->
+            <section id="home-page">
+                <div class="home-slides">
+                    <div><img src="http://i1.piimg.com/588926/1f4607f7d209044b.jpg" alt=""></div>
+                    <div><img src="http://i4.buimg.com/588926/43a6113e360965e5.jpg" alt=""></div>
+                    <div><img src="http://i1.piimg.com/588926/03d0cbf97851637a.jpg" alt=""></div>
+                    <div><img src="http://i4.buimg.com/588926/c08d9aee619725f7.jpg" alt=""></div>
+                </div>
+            </section>
+            <!-- 新闻 -->
+            <section id="news">
+                <ul>
+                    <li>
+                        <img src="http://www.seejs.com/imgserv/?size=400x400" alt="">
+                        <p>
+                            <span>蚊子蚊子</span>
+                            <span>蚊子蚊子</span>
+                            <span>蚊子蚊子</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="http://www.seejs.com/imgserv/?size=400x400" alt="">
+                        <P>
+                            <span>蚊子蚊子</span>
+                            <span>蚊子蚊子</span>
+                            <span>蚊子蚊子</span>
+                        </P>
+                    </li>
+                    <li>
+                        <img src="http://www.seejs.com/imgserv/?size=400x400" alt="">
+                        <P>
+                            <span>文字文字</span>
+                            <span>蚊子蚊子</span>
+                            <span>蚊子蚊子</span>
+                        </P>
+                    </li>
+                </ul>
+            </section>
+            <!-- 球员 -->
+            <section>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="http://www.seejs.com/imgserv/?size=200x200" alt=""></div>
+                        <div class="swiper-slide"><img src="http://www.seejs.com/imgserv/?size=200x200" alt=""></div>
+                        <div class="swiper-slide"><img src="http://www.seejs.com/imgserv/?size=200x200" alt=""></div>
+                        <div class="swiper-slide"><img src="http://www.seejs.com/imgserv/?size=200x200" alt=""></div>
+                        <div class="swiper-slide"><img src="http://www.seejs.com/imgserv/?size=200x200" alt=""></div>
+                        <div class="swiper-slide"><img src="http://www.seejs.com/imgserv/?size=200x200" alt=""></div>
+                        <div class="swiper-slide"><img src="http://www.seejs.com/imgserv/?size=200x200" alt=""></div>
+                        <div class="swiper-slide"><img src="http://www.seejs.com/imgserv/?size=200x200" alt=""></div>
+                        <div class="swiper-slide"><img src="http://www.seejs.com/imgserv/?size=200x200" alt=""></div>
+                        <div class="swiper-slide"><img src="http://www.seejs.com/imgserv/?size=200x200" alt=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js\vendor\swiper.jquery.min.js"></script>
+    <script src="js\vendor\jquery.slides.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 4,
+            centeredSlides: true,
+            paginationClickable: true,
+            spaceBetween: 30,
+            grabCursor: true
+        });
+    </script>
+</body>
 
-        </section>
-        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js\vendor\jquery.slides.min.js"></script>
-        <script src="js/main.js"></script>
-        <script>
-            
-        </script>
-    </body>
 </html>
