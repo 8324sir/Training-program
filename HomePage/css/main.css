@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 ul ,ol{
     list-style: none;
@@ -48,18 +47,27 @@ ul ,ol{
     padding-left: 98px;
     background: url('http://i1.piimg.com/588926/f62898f4ea4457af.png') left top no-repeat;
 }
-.home-header #teamhome .team-logo{
-    width: 440px;
+#teamhome .team-logo{
+    width: 340px;
     height: 50px;
-    padding: 40px 0 40px 106px;
+    padding: 40px 0 20px 106px;
     font-size: 16px;
 }
 .home-header #teamhome .team-logo p span{
-    display: block;
     float: left;
+    display: block;
 }
-.home-header #teamhome .team-logo p span .regular{
-    border: 1px solid #fff;
+.home-header #teamhome .team-logo p span.regular{
+    border-right: 1px solid #01050d;
+    padding-right: 10px;
+}
+.home-header #teamhome .team-logo p span.rank{
+    padding-left: 10px;
+    width: 86px;
+    border-left: 1px solid #055277;
+}
+.home-header #teamhome .team-match li{
+    font-size: 14px;
 }
 .home-header #teamhome .team-match li span{
     display: inline-block;
@@ -72,7 +80,7 @@ ul ,ol{
     font-style: normal;
     text-align: right;
 }
-.home-header #teamhome .team-logo p, .team-match li{
+.home-header #teamhome .team-logo p , .team-match li{
     padding-bottom: 4px;
     clear: both; 
 }
@@ -80,63 +88,25 @@ ul ,ol{
 .home-header .home-navbar{
     background: #031924;
     width: 100%;
-    position: relative;
 }
 .home-header .home-navbar .home-nav-list{
     width: 1000px;
     height: 60px;
-    line-height: 60px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    line-height: 60px;    
 }
 .home-header .home-navbar .home-nav-list li{
     float: left;
 }
 .home-header .home-navbar .home-nav-item{
-    position: relative;
     height: 60px;
     color: #5a5f63;
 }
 .home-header .home-navbar .home-nav-item .home-nav-link{
-    display: block;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-size: 18px;
-    line-height: 60px;
-    height: 60px;
+    display: inline-block;
     color: #fff;
     text-decoration: none;
-}
-.home-header .home-entries{
-    position: absolute;
-    right: 125px;
-    top: 0;
-}
-.home-header .home-entries li{
-    float: left;
-}
-.home-header .home-button{
-    margin-left: 10px;
-    margin-top: 15px;
-    display: inline-block;
-    border: 1px solid transparent;
-    line-height: 28px;
-    font-size: 14px;
+    font-size: 18px;
     padding: 0 20px;
-    text-align: center;
-    border-radius: 4px;
-    text-decoration: none;
-}
-.home-header .blue{
-    background-image: linear-gradient(-40deg, #6c9fe2 0%, #80b3f5 95%);
-    border: 1px solid #6da0e3;
-    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.1);
-}
-.home-header  a:hover{
-    content: '';
-    color: #778087;
-    text-decoration: none;
 }
 
 /*内容部分*/
